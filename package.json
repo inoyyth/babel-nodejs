@@ -1,0 +1,37 @@
+{
+  "name": "babel-project",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon --exec babel-node ./bin/server",
+    "beforeTest": "babel-node ./test/fixture/feeder.js",
+    "test:unit": "mocha ./test/unit --require babel-register --require babel-polyfill",
+    "test:integration": "npm run beforeTest && mocha ./test/integration --require babel-register --require babel-polyfill"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "jade": "~1.11.0",
+    "mysql": "^2.15.0",
+    "serve-favicon": "~2.4.5",
+    "solr-client": "^0.7.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "get-port": "^3.2.0",
+    "mocha": "^4.1.0",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.14.10",
+    "sinon": "^4.1.4"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "solr_slave": {
+    "solrHost": "10.10.20.136",
+    "solrPort": "8080",
+    "solrPath": "/solr-slave"
+  },
+  "mysql_local": {
+    "host": "localhost",
+    "user": "root",
+    "password": "170845inoy",
+    "database": "coba2_db"
+  }
+}
