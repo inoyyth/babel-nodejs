@@ -9,6 +9,6 @@ export default class MysqlClient {
             user: config.mysql_local.user,
             password: config.mysql_local.password,
             database: config.mysql_local.database
-        }))
+        }));
     }
 }

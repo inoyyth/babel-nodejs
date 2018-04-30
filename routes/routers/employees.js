@@ -1,11 +1,11 @@
 import express from 'express';
 const router = express.Router();
-import { findAllEmployees } from '../../controllers/employees';
+import { findAllEmployees, findEmployeeById } from '../../controllers/employees';
 
 /* GET users listing. */
 router.get('/', findAllEmployees);
 
-//router.get('/:id', findListingById);
+router.get('/:id', findEmployeeById);
 
 //module.exports = router;
 
